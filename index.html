@@ -1,12 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>The resto</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./assets/index.css">
 </head>
+
 <body>
-  
+  <header>
+    <nav>
+      <h4>Resto</h4>
+      <ul class="mid-part">
+        <li>home</li>
+        <li>reservations</li>
+        <li>menu</li>
+        <li>blog</li>
+        <li>pages</li>
+        <li>shop</li>
+        <li>contact</li>
+      </ul>
+      <ul class="right-part">
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+      </ul>
+    </nav>
+    <div class="header-content">
+      <h3>Welcome to</h3>
+      <h1>the resto</h1>
+      <img src="./assets/img/ic-plate.png" alt="fork-spoon">
+      <p>we serve only the freshest ingredients</p>
+      <div class="header-img"></div>
+    </div>
+  </header>
+
+  <section class="disco">
+    <div class="left-part">
+      <h4>Discover</h4>
+      <h4>our store</h4>
+      <img src="./assets/img/ic" alt="fork-spoon">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum illum, quisquam minus laborum maxime, perferendis
+        natus ratione quo doloremque quam, accusantium laudantium laboriosam qui! Repellendus natus sapiente dolorem
+        odit atque officiis eaque! Nemo!
+      </p>
+      <img src="./assets/img/avatar-01.jpg" alt="Russell-Stephens">
+      <p>Russel Stephens</p>
+      <p>chef cook</p>
+    </div>
+    <div class="disco-img"></div>
+  </section>
+
+  <section class="menu-part">
+    <h4>Discover</h4>
+    <img src="./assets/img/ic" alt="fork-spoon">
+    <nav>
+      <ul class="choices">
+        <li>breakfast</li>
+        <li>lunch</li>
+        <li>dinner</li>
+        <li>drinks</li>
+        <li>other</li>
+      </ul>
+    </nav>
+    <div class="menu">
+      <div>
+        <img src="./assets/img/dish-item-01.jpg" alt="dish-1">
+        <div>
+          <h5>italian source mushroom</h5>
+          <p>mushroom / garlic / veggies</p>
+        </div>
+        <p>$12</p>
+      </div>
+      <div>
+        <img src="./assets/img/dish-item-02.jpg" alt="dish-2">
+        <div>
+          <h5>fried potaoes with garlic</h5>
+          <p>potatoes / olive oil / garlic</p>
+        </div>
+        <p>$22</p>
+        <div>
+          <img src="./assets/img/dish-item-03.jpg" alt="dish-3">
+          <div>
+            <h5>tenu roast source</h5>
+            <p>tuna / potatoes / rice</p>
+          </div>
+          <p>$15</p>
+        </div>
+        <div>
+          <img src="./assets/img/dish-item-04.jpg" alt="dish-4">
+          <div>
+            <h5>roast pork (4 sticks)</h5>
+            <p>pork / veggies / shoyu</p>
+          </div>
+          <p>$18</p>
+        </div>
+        <div>
+          <img src="./assets/img/dish-item-05.jpg" alt="dish-5">
+          <div>
+            <h5>salted fried chicken</h5>
+            <p>chicken / olive oil / salt</p>
+          </div>
+          <p>$20</p>
+        </div>
+        <div>
+          <img src="./assets/img/dish-item-06.jpg" alt="dish-6">
+          <div>
+            <h5>crab with curry sources</h5>
+            <p>crab / potatoes / rice</p>
+          </div>
+          <p>$14</p>
+        </div>
+        <div>
+          <img src="./assets/img/dish-item-07.jpg" alt="dish-7">
+          <div>
+            <h5>imported salmon steak</h5>
+            <p>salmon / veggies / oil</p>
+          </div>
+          <p>$16</p>
+        </div>
+        <div>
+          <img src="./assets/img/dish-item-08.jpg" alt="dish-8">
+          <div>
+            <h5>baked potato pizza</h5>
+            <p>potato / bread / cheese</p>
+          </div>
+          <p>$25</p>
+        </div>
+      </div>
+  </section>
+
+  <section class="booking">
+    <div class="left-part">
+      <h4>Time</h4>
+      <h6>OPEN</h6>
+      <img src="./assets/img/ic-plate-big.png" alt="fork-spoon-big">
+      <h5>monday - friday</h5>
+      <p>7AM - 11AM (Breakfast)</p>
+      <p>11PM - 10PM (Lunch/Dinner)</p>
+      <h5>Saturday - sunday</h5>
+      <p>8AM - 1PM (Brunch)</p>
+      <p>1PM - 9PM (Lunch/Dinner)</p>
+      <h5>+15 890 979 25 52</h5>
+    </div>
+
+    <div class="right-part">
+      <h4>Reservation</h4>
+      <p>Online Booking</p>
+      <img src="./assets/img/ic-plate.png" alt="fork-spoon">
+      <div class="form">
+        <select id="people">
+          <option value="people">people</option>
+          <option value="zebite">zebite</option>
+        </select>
+
+        <input type="date" value="2023-06-05" min="2023-06-05" max="2025-06-05">
+
+        <input type="time" min="07:00" max="22:00" required>
+
+        <input type="text" name="name" placeholder="Name">
+        <input type="text" name="phone" placeholder="Phone">
+        <input type="text" name="email" placeholder="Email">
+        <div class="submit-container">
+          <input type="submit" class="btn" value="BOOK NOW">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="events">
+    <h4>Upcoming</h4>
+    <h6>OUR EVENT</h6>
+    <img src="./assets/img/ic-plate.png" alt="fork-spoon">
+    <div class="main-container">
+      <div class="up-left-container">
+        <div class="left-part">
+          <img src="./assets/img/event-01.jpg" alt="event-01">
+          <div class="date">
+            <p>08 July</p>
+          </div>
+        </div>
+        <p>Night Inspirescu Party</p>
+        <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto </p>
+        <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+        <a href="#"> BUY TICKETS</a>
+      </div>
+
+      <div class="down-left-container">
+        <div class="left-part">
+          <img src="./assets/img/event-02.jpg" alt="event-02">
+          <div class="date">
+            <p>08 July</p>
+          </div>
+        </div>
+        <p>DJ RobagRhume</p>
+        <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto </p>
+        <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+        <a href="#"> BUY TICKETS</a>
+      </div>
+    </div>
+
+    <div class="right-container">
+      <div class="container">
+        <div class="date">
+          <p>08 July</p>
+        </div>
+        <p>Thousands celebrities at Johnie Night</p>
+        <p><i class="fa-solid fa-location-dot"></i> Restaurant Resto </p>
+        <i class="fa-regular fa-clock"></i> 10:00pm - 6:00am
+        <a href="#"> BUY TICKETS</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="ceo">
+    <img src="./assets/img/avatar-02.jpg" alt="avatar-02">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit aliquam nostrum dolor qui. Vitae ex ut labore
+      amet voluptate voluptas illum velit quaerat ab quia iste inventore repudiandae corporis rem illo, et nostrum est
+      perferendis magni. Dolore blanditiis adipisci nam.</p>
+    <p>Russell Stephens</p>
+    <p>CEO - HeadPassion</p>
+  </section>
+
+  <footer>
+    <div class="left-part">
+      <h4>Resto</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, enim velit vitae voluptas odio unde
+        suscipit ratione ab minima necessitatibus ea laudantium, error omnis modi.</p>
+    </div>
+    <div class="right-part">
+      <ul class="newsletter">
+        <li>NEWSLETTER</li>
+        <li><input type="text" name="email" placeholder="Your email address"></li>
+      </ul>
+      <ul class="social">
+        <li><i class="fa-brands fa-facebook-f"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-pinterest"></i></li>
+      </ul>
+    </div>
+  </footer>
+
 </body>
+
 </html>
