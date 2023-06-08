@@ -1,0 +1,60 @@
+.disco {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 400px;
+  background: rgb(245, 245, 245);
+
+  .left-part {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    border: 1px dashed $color1;
+    line-height: 20px;
+
+    h4 {
+      color: $color1;
+      font-family: $font1;
+      font-size: 1.5rem;
+      font-weight: 100;
+      margin-top: 30px;
+    }
+    h5 {
+      text-transform: uppercase;
+      font-family: $font2;
+      font-size: 1rem;
+    }
+    img:first-of-type {
+      height: 28px;
+      margin: 20px;
+    }
+    p {
+      text-align: center;
+      margin: 0 10px;
+      font-family: $font3;
+      font-size: 0.9rem;
+      color: rgb(112, 112, 112);
+    }
+    img:last-of-type {
+      border-radius: 999px;
+      height: 70px;
+      margin: 20px 0 15px 0;
+    }
+
+    h6{
+      font-family: $font2;
+      font-size: 1rem;
+      letter-spacing: 1px;
+    }
+    p:last-of-type{
+      text-transform: uppercase;
+      font-family: $font3;
+      font-size: 0.7rem;
+      color: rgba(128, 128, 128, 0.695);
+    }
+
+  }
+  .disco-img {
+    background: url(/assets/img/store-01.jpg) center/cover;
+  }
+}
