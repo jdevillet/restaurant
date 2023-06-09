@@ -147,7 +147,7 @@ header .header-content p {
 .disco .left-part img:last-of-type {
   border-radius: 999px;
   height: 70px;
-  margin: 20px 0 15px 0;
+  margin: 20px 0 15px;
 }
 .disco .left-part h6 {
   font-family: "poppins", serif;
