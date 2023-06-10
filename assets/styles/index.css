@@ -147,7 +147,7 @@ header .header-content p {
 .disco .left-part img:last-of-type {
   border-radius: 999px;
   height: 70px;
-  margin: 20px 0 15px;
+  margin: 20px 0 15px 0;
 }
 .disco .left-part h6 {
   font-family: "poppins", serif;
@@ -208,12 +208,13 @@ header .header-content p {
   display: grid;
   grid-template-columns: 50% 50%;
   border-top: 4px solid rgb(161, 125, 77);
+  margin-bottom: 100px;
 }
 .container-bg .menu-part .menu .in-menu {
   display: flex;
   align-items: center;
   padding: 20px 0 0 0;
-  margin: 0 20px;
+  margin: 0 20px 10px;
   border-bottom: 1px dashed rgb(182, 182, 182);
   gap: 10px;
 }
@@ -243,4 +244,111 @@ header .header-content p {
   font-family: "roboto", serif;
   font-size: 1.1rem;
   text-align: end;
+}
+
+.booking {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 80%;
+  margin: 80px auto;
+  background: rgb(4, 4, 4);
+}
+.booking .left-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  line-height: 22px;
+  background: rgb(4, 4, 4);
+  border: 1px rgb(201, 201, 201) dashed;
+  margin: 20px;
+}
+.booking .left-part h4 {
+  font-family: "allura", sans-serif;
+  color: rgb(161, 125, 77);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.booking .left-part h6 {
+  font-family: "poppins", serif;
+  color: rgb(251, 251, 251);
+  font-size: 1.3rem;
+}
+.booking .left-part img {
+  height: 28px;
+  margin: 20px 0;
+}
+.booking .left-part h5 {
+  color: rgb(161, 125, 77);
+  font-family: "poppins", serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  margin: 25px 0 20px;
+}
+.booking .left-part h5:last-of-type {
+  margin: 40px 0 10px;
+}
+.booking .left-part p {
+  line-height: 17px;
+  color: rgb(201, 201, 201);
+  font-size: 0.8rem;
+  font-family: "roboto", serif;
+}
+.booking .right-part {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(251, 251, 251);
+  justify-content: center;
+  line-height: 25px;
+}
+.booking .right-part h4 {
+  color: rgb(161, 125, 77);
+  font-family: "allura", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+.booking .right-part p {
+  font-family: "poppins", serif;
+  text-transform: uppercase;
+  font-size: 1.7rem;
+}
+.booking .right-part img {
+  height: 25px;
+  margin: 30px;
+}
+.booking .right-part .form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 40px 40px;
+  gap: 15px;
+}
+.booking .right-part .form select,
+.booking .right-part .form input {
+  font-family: "roboto", serif;
+  background: none;
+  border: transparent;
+  border-bottom: 1px solid rgb(205, 205, 205);
+  outline: none;
+}
+.booking .right-part .submit-container {
+  margin: 20px;
+}
+.booking .right-part .submit-container input {
+  cursor: pointer;
+  margin: 20px;
+  border: none;
+  padding: 10px 30px;
+  letter-spacing: 2px;
+  background: rgb(23, 23, 23);
+  color: rgb(251, 251, 251);
+  font-family: "poppins", serif;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+.booking .right-part .submit-container input:hover {
+  border: 1px solid rgb(23, 23, 23);
+  background: rgb(251, 251, 251);
+  color: rgb(23, 23, 23);
 }/*# sourceMappingURL=index.css.map */
