@@ -221,23 +221,25 @@ header .header-content p {
 }
 .container-bg .menu-part .menu .in-menu img {
   border-radius: 999px;
-  height: 85px;
+  height: 80px;
 }
 .container-bg .menu-part .menu .in-menu div {
   width: 100%;
-  white-space: nowrap;
 }
 .container-bg .menu-part .menu .in-menu div h5 {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-family: "roboto", serif;
   color: black;
-  padding: 0 0 10px;
+  padding: 0 0 5px;
+  width: 100%;
+  white-space: nowrap;
 }
 .container-bg .menu-part .menu .in-menu div p {
   font-family: "roboto", serif;
   font-size: 0.9rem;
   color: rgb(152, 152, 152);
+  width: 100%;
 }
 .container-bg .menu-part .menu .in-menu .price {
   color: rgb(161, 125, 77);
