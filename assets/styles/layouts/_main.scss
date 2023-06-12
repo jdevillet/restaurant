@@ -228,7 +228,7 @@
       grid-template-rows: 40px 40px;
       gap: 15px;
       select,
-      input{
+      input {
         font-family: $font3;
         background: none;
         border: transparent;
@@ -236,28 +236,253 @@
         outline: none;
       }
     }
-      .submit-container {
+    .submit-container {
+      margin: 20px;
+      input {
+        cursor: pointer;
         margin: 20px;
-        input{
-          cursor: pointer;
-          margin: 20px;
-          border: none;
-          padding: 10px 30px;
-          letter-spacing: 2px;
-          background: $black1;
-          color: $white1;
-          font-family: $font2;
-          border-radius: 999px;
-          transition: 0.3s;
+        border: none;
+        padding: 10px 30px;
+        letter-spacing: 2px;
+        background: $black1;
+        color: $white1;
+        font-family: $font2;
+        border-radius: 999px;
+        transition: 0.3s;
 
-          &:hover{
-            border: 1px solid $black1;
-            background: $white1;
-            color: $black1;
+        &:hover {
+          border: 1px solid $black1;
+          background: $white1;
+          color: $black1;
+        }
+      }
+    }
+  }
+}
 
-            
+.events {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  line-height: 38px;
+
+  h4 {
+    font-family: $font1;
+    color: $color1;
+    font-size: 2.4rem;
+    font-weight: 100;
+  }
+  h6 {
+    font-family: $font2;
+    color: $white1;
+    font-size: 2rem;
+  }
+  img {
+    margin: 30px 0 20px;
+  }
+
+  .main-container {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "e1 e3"
+      "e2 e3";
+    gap: 20px;
+
+    img {
+      height: 300px;
+    }
+
+    .up-left-container {
+      display: flex;
+      background: $white1;
+      grid-area: e1;
+      width: 100%;
+      .left-part {
+        background: url(/assets/img/event-01.jpg) center/cover;
+        height: 100%;
+        width: 40%;
+        .date {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          p {
+            background: $black1;
+            padding: 15px;
+            color: $white1;
+            font-family: $font3;
+            width: min-content;
+            line-height: 23px;
+            font-size: 1rem;
+          }
+          p:first-line {
+            font-size: 1.8rem;
+            font-weight: 900;
           }
         }
       }
+      .info {
+        display: flex;
+        flex-direction: column;
+        color: rgb(204, 204, 204);
+        font-family: $font3;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        h6 {
+          font-family: $font3;
+          color: $black1;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          font-weight: 100;
+          color: rgb(103, 103, 103);
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        a {
+          font-family: $font3;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+          color: $black1;
+          font-weight: 900;
+        }
+      }
+    }
+
+    .down-left-container {
+      display: flex;
+      background: $white1;
+      grid-area: e2;
+      width: 100%;
+
+      .left-part {
+        background: url(/assets/img/event-02.jpg) center/cover;
+        height: 100%;
+        width: 40%;
+
+        .date {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          justify-content: center;
+          align-items: center;
+          p {
+            background: $black1;
+            padding: 15px;
+            color: $white1;
+            font-family: $font3;
+            width: min-content;
+            line-height: 23px;
+            font-size: 1rem;
+          }
+          p:first-line {
+            font-size: 1.8rem;
+            font-weight: 900;
+          }
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        color: rgb(204, 204, 204);
+        font-family: $font3;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        h6 {
+          font-family: $font3;
+          color: $black1;
+          font-size: 1.2rem;
+          letter-spacing: 1px;
+          font-weight: 100;
+          color: rgb(103, 103, 103);
+        }
+        p {
+          font-size: 0.8rem;
+        }
+        a {
+          font-family: $font3;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+          color: $black1;
+          font-weight: 900;
+        }
+      }
+    }
+    .right-container {
+      grid-area: e3;
+      width: 100%;
+      height: 400px;
+      background: url(/assets/img/event-03.jpg) center/cover;
+      padding: 25px;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        background: $white1;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        position: relative;
+        .date {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+
+          p {
+            background: $black1;
+            padding: 15px;
+            color: $white1;
+            font-family: $font3;
+            width: min-content;
+            line-height: 23px;
+            font-size: 1rem;
+          }
+          p:first-line {
+            font-size: 1.8rem;
+            font-weight: 900;
+          }
+        }
+        .info {
+          display: flex;
+          flex-direction: column;
+          color: rgb(204, 204, 204);
+          font-family: $font3;
+          align-items: center;
+          margin: 20px;
+          h6 {
+            font-family: $font3;
+            color: $black1;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            color: rgb(103, 103, 103);
+            line-height: 20px;
+          }
+          p {
+            font-size: 0.8rem;
+          }
+        }
+        a {
+          position: absolute;
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-family: $font3;
+          letter-spacing: 2px;
+          font-size: 0.8rem;
+          color: $black1;
+          font-weight: 900;
+          
+        }
+      }
+    }
   }
 }

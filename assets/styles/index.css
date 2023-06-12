@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+  text-decoration: none;
 }
 
 body {
@@ -351,4 +352,222 @@ header .header-content p {
   border: 1px solid rgb(23, 23, 23);
   background: rgb(251, 251, 251);
   color: rgb(23, 23, 23);
+}
+
+.events {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  line-height: 38px;
+}
+.events h4 {
+  font-family: "allura", sans-serif;
+  color: rgb(161, 125, 77);
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+.events h6 {
+  font-family: "poppins", serif;
+  color: rgb(251, 251, 251);
+  font-size: 2rem;
+}
+.events img {
+  margin: 30px 0 20px;
+}
+.events .main-container {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "e1 e3" "e2 e3";
+  gap: 20px;
+}
+.events .main-container img {
+  height: 300px;
+}
+.events .main-container .up-left-container {
+  display: flex;
+  background: rgb(251, 251, 251);
+  grid-area: e1;
+  width: 100%;
+}
+.events .main-container .up-left-container .left-part {
+  background: url(/assets/img/event-01.jpg) center/cover;
+  height: 100%;
+  width: 40%;
+}
+.events .main-container .up-left-container .left-part .date {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.events .main-container .up-left-container .left-part .date p {
+  background: rgb(23, 23, 23);
+  padding: 15px;
+  color: rgb(251, 251, 251);
+  font-family: "roboto", serif;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 23px;
+  font-size: 1rem;
+}
+.events .main-container .up-left-container .left-part .date p:first-line {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.events .main-container .up-left-container .info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(204, 204, 204);
+  font-family: "roboto", serif;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.events .main-container .up-left-container .info h6 {
+  font-family: "roboto", serif;
+  color: rgb(23, 23, 23);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: rgb(103, 103, 103);
+}
+.events .main-container .up-left-container .info p {
+  font-size: 0.8rem;
+}
+.events .main-container .up-left-container .info a {
+  font-family: "roboto", serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: rgb(23, 23, 23);
+  font-weight: 900;
+}
+.events .main-container .down-left-container {
+  display: flex;
+  background: rgb(251, 251, 251);
+  grid-area: e2;
+  width: 100%;
+}
+.events .main-container .down-left-container .left-part {
+  background: url(/assets/img/event-02.jpg) center/cover;
+  height: 100%;
+  width: 40%;
+}
+.events .main-container .down-left-container .left-part .date {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.events .main-container .down-left-container .left-part .date p {
+  background: rgb(23, 23, 23);
+  padding: 15px;
+  color: rgb(251, 251, 251);
+  font-family: "roboto", serif;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 23px;
+  font-size: 1rem;
+}
+.events .main-container .down-left-container .left-part .date p:first-line {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.events .main-container .down-left-container .info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(204, 204, 204);
+  font-family: "roboto", serif;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.events .main-container .down-left-container .info h6 {
+  font-family: "roboto", serif;
+  color: rgb(23, 23, 23);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: rgb(103, 103, 103);
+}
+.events .main-container .down-left-container .info p {
+  font-size: 0.8rem;
+}
+.events .main-container .down-left-container .info a {
+  font-family: "roboto", serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: rgb(23, 23, 23);
+  font-weight: 900;
+}
+.events .main-container .right-container {
+  grid-area: e3;
+  width: 100%;
+  height: 400px;
+  background: url(/assets/img/event-03.jpg) center/cover;
+  padding: 25px;
+}
+.events .main-container .right-container .container {
+  display: flex;
+  flex-direction: column;
+  background: rgb(251, 251, 251);
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.events .main-container .right-container .container .date {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.events .main-container .right-container .container .date p {
+  background: rgb(23, 23, 23);
+  padding: 15px;
+  color: rgb(251, 251, 251);
+  font-family: "roboto", serif;
+  width: -moz-min-content;
+  width: min-content;
+  line-height: 23px;
+  font-size: 1rem;
+}
+.events .main-container .right-container .container .date p:first-line {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.events .main-container .right-container .container .info {
+  display: flex;
+  flex-direction: column;
+  color: rgb(204, 204, 204);
+  font-family: "roboto", serif;
+  align-items: center;
+  margin: 20px;
+}
+.events .main-container .right-container .container .info h6 {
+  font-family: "roboto", serif;
+  color: rgb(23, 23, 23);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: rgb(103, 103, 103);
+  line-height: 20px;
+}
+.events .main-container .right-container .container .info p {
+  font-size: 0.8rem;
+}
+.events .main-container .right-container .container a {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "roboto", serif;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: rgb(23, 23, 23);
+  font-weight: 900;
 }/*# sourceMappingURL=index.css.map */
