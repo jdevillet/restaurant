@@ -362,6 +362,7 @@ header .header-content p {
   text-align: center;
   align-items: center;
   line-height: 38px;
+  margin-bottom: 150px;
 }
 .events h4 {
   font-family: "allura", sans-serif;
@@ -572,4 +573,59 @@ header .header-content p {
   font-size: 0.8rem;
   color: rgb(23, 23, 23);
   font-weight: 900;
+}
+
+.after {
+  position: relative;
+  width: 100%;
+  padding-bottom: 200px;
+}
+.after .ceo {
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  padding: 70px;
+  background: rgb(251, 251, 251);
+  margin: 0 auto;
+  width: 940px;
+  height: 300px;
+}
+.after .ceo img {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  border-radius: 999px;
+  height: 60px;
+}
+.after .ceo p:first-of-type {
+  font-family: "roboto", serif;
+  color: rgb(177, 176, 176);
+  line-height: 30px;
+}
+.after .ceo p:nth-of-type(2) {
+  font-family: "roboto", serif;
+  font-size: 1.45rem;
+  font-weight: 100;
+  color: rgb(74, 74, 74);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.after .ceo p:last-of-type {
+  font-family: "roboto", serif;
+  color: rgb(161, 125, 77);
+  font-weight: 100;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+.after:after {
+  content: "";
+  background: url(/assets/img/gmap.jpg) center;
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  bottom: 0;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }/*# sourceMappingURL=index.css.map */

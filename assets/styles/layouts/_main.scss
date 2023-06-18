@@ -64,7 +64,7 @@
 
   height: 50%;
 
-//La carte
+  //La carte
 
   .menu-part {
     width: 52%;
@@ -274,6 +274,7 @@
   text-align: center;
   align-items: center;
   line-height: 38px;
+  margin-bottom: 150px;
 
   h4 {
     font-family: $font1;
@@ -493,3 +494,59 @@
     }
   }
 }
+.after{
+position: relative;
+width: 100%;
+padding-bottom: 200px;
+  .ceo {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px;
+    background: $white1;
+    margin: 0 auto;
+    width: 940px;
+    height: 300px;
+    
+    img {
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      border-radius: 999px;
+      height: 60px;
+    }
+    p:first-of-type {
+      font-family: $font3;
+      color: rgb(177, 176, 176);
+      line-height: 30px;
+    }
+    p:nth-of-type(2) {
+      font-family: $font3;
+      font-size: 1.45rem;
+      font-weight: 100;
+      color: rgb(74, 74, 74);
+      margin-top: 30px;
+      margin-bottom: 15px;
+    }
+    p:last-of-type {
+      font-family: $font3;
+      color: $color1;
+      font-weight: 100;
+      font-size: 0.9em;
+      letter-spacing: 1px;
+    }
+  }
+  &:after {
+    content: "";
+    background: url(/assets/img/gmap.jpg)center;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+  
