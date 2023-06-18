@@ -538,7 +538,7 @@ padding-bottom: 200px;
   }
   &:after {
     content: "";
-    background: url(/assets/img/gmap.jpg)center;
+    background: url(/assets/img/gmap.jpg)center/cover;
     position: absolute;
     height: 300px;
     width: 100%;

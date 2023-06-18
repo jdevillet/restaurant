@@ -66,13 +66,11 @@ header nav .right-part {
   min-width: 50px;
   justify-content: space-around;
 }
-header nav .right-part li a {
+header nav .right-part li {
   cursor: pointer;
-}
-header nav .right-part li i {
   transition: 0.3s;
 }
-header nav .right-part li i:hover {
+header nav .right-part li:hover {
   transform: scale(1.3);
 }
 header .header-content {
@@ -619,7 +617,7 @@ header .header-content p {
 }
 .after:after {
   content: "";
-  background: url(/assets/img/gmap.jpg) center;
+  background: url(/assets/img/gmap.jpg) center/cover;
   position: absolute;
   height: 300px;
   width: 100%;
@@ -628,4 +626,82 @@ header .header-content p {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 250px;
+}
+footer .bg {
+  background: rgb(23, 23, 23);
+  display: flex;
+}
+footer .bg .left-part {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 25px;
+  justify-content: center;
+  margin: 0 40px 0 40%;
+}
+footer .bg .left-part h4 {
+  font-family: "allura", sans-serif;
+  color: rgb(161, 125, 77);
+  font-size: 2.3rem;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+footer .bg .left-part p {
+  color: rgb(168, 168, 168);
+  font-family: "roboto", serif;
+  font-size: 0.9rem;
+}
+footer .right-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 40px;
+}
+footer .right-part .newsletter {
+  line-height: 30px;
+}
+footer .right-part .newsletter p {
+  color: rgb(251, 251, 251);
+  font-family: "poppins", serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+footer .right-part .newsletter input {
+  border: 1px solid rgb(45, 44, 44);
+  background: none;
+  font-family: "roboto", serif;
+  padding: 5px 0 5px 10px;
+  width: 250px;
+  color: rgb(147, 147, 147);
+}
+footer .right-part .newsletter input:focus {
+  background: rgba(61, 61, 61, 0.481);
+  outline: none;
+}
+footer .right-part .social {
+  display: flex;
+  margin-top: 50px;
+}
+footer .right-part .social p {
+  color: rgb(251, 251, 251);
+  font-family: "poppins", serif;
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+footer .right-part .social li {
+  margin-left: 30px;
+  justify-content: space-around;
+  color: rgb(147, 147, 147);
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer .right-part .social li:hover {
+  font-size: 1rem;
 }/*# sourceMappingURL=index.css.map */
