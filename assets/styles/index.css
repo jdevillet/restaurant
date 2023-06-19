@@ -34,46 +34,71 @@ header nav {
   width: 100%;
   color: rgb(251, 251, 251);
 }
-header nav h4 {
+header h4 {
   font-family: "allura", sans-serif;
   font-size: 2.1rem;
   color: rgb(0, 0, 0);
   color: rgb(251, 251, 251);
-  padding: 0 50px 0 0;
+  padding: 0 30px 0 0;
 }
-header nav ul {
+@media screen and (max-width: 640px) {
+  header h4 {
+    position: absolute;
+    left: 6%;
+  }
+}
+header ul {
   display: flex;
   text-transform: uppercase;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
-header nav .mid-part {
-  justify-content: space-around;
+header .mid-part {
+  justify-content: space-between;
   width: 60%;
   font-family: "roboto", serif;
 }
-header nav .mid-part li {
+@media screen and (max-width: 640px) {
+  header .mid-part {
+    display: none;
+  }
+}
+header .mid-part li {
   cursor: pointer;
   transition: 0.2s;
 }
-header nav .mid-part li:hover {
+header .mid-part li:hover {
   text-decoration: underline;
   transform: scale(1.1);
   letter-spacing: 1px;
 }
-header nav .right-part {
+header .right-part {
   display: flex;
   width: 6%;
   min-width: 50px;
   justify-content: space-around;
+  margin-left: 10px;
 }
-header nav .right-part li {
+@media screen and (max-width: 640px) {
+  header .right-part {
+    width: 100%;
+    justify-content: end;
+  }
+}
+header .right-part li {
   cursor: pointer;
   transition: 0.3s;
+  padding: 4px;
 }
-header nav .right-part li:hover {
+@media screen and (max-width: 640px) {
+  header .right-part li {
+    padding: 10px;
+  }
+}
+header .right-part li:hover {
   transform: scale(1.3);
 }
-header .header-content {
+
+.header-content {
   min-height: 90vh;
   display: flex;
   flex-direction: column;
@@ -82,28 +107,43 @@ header .header-content {
   line-height: 35px;
   padding-bottom: 110px;
 }
-header .header-content h3 {
+.header-content h3 {
   font-family: "allura", sans-serif;
   font-size: 2.5rem;
   color: rgb(161, 125, 77);
 }
-header .header-content h1 {
+.header-content h1 {
   text-transform: uppercase;
   letter-spacing: 7px;
   font-family: "poppins", serif;
   font-size: 2.9rem;
   color: rgb(251, 251, 251);
 }
-header .header-content img {
+@media screen and (max-width: 450px) {
+  .header-content h1 {
+    margin: 40px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+.header-content img {
   height: 25px;
   margin: 45px 0 40px 0;
 }
-header .header-content p {
+.header-content p {
   text-transform: uppercase;
   font-family: "roboto", serif;
   letter-spacing: 4px;
   font-size: 0.7rem;
   color: rgb(251, 251, 251);
+}
+@media screen and (max-width: 450px) {
+  .header-content p {
+    margin: 40px;
+    font-size: 1rem;
+    text-align: center;
+    letter-spacing: 6px;
+  }
 }
 
 .disco {
@@ -111,6 +151,12 @@ header .header-content p {
   grid-template-columns: 50% 50%;
   min-height: 400px;
   background: rgb(245, 245, 245);
+}
+@media screen and (max-width: 570px) {
+  .disco {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .disco .left-part {
   display: flex;
@@ -175,6 +221,11 @@ header .header-content p {
   margin: 0 auto;
   padding: 45px 0 0 0;
 }
+@media screen and (max-width: 570px) {
+  .container-bg .menu-part {
+    width: 90%;
+  }
+}
 .container-bg .menu-part h4 {
   font-family: "allura", sans-serif;
   color: rgb(161, 125, 77);
@@ -209,6 +260,12 @@ header .header-content p {
   border-top: 4px solid rgb(161, 125, 77);
   margin-bottom: 100px;
 }
+@media screen and (max-width: 570px) {
+  .container-bg .menu-part .menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .container-bg .menu-part .menu .in-menu {
   display: flex;
   align-items: center;
@@ -217,9 +274,21 @@ header .header-content p {
   border-bottom: 1px dashed rgb(182, 182, 182);
   gap: 10px;
 }
+@media screen and (max-width: 400px) {
+  .container-bg .menu-part .menu .in-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .container-bg .menu-part .menu .in-menu img {
   border-radius: 999px;
   height: 80px;
+}
+@media screen and (max-width: 400px) {
+  .container-bg .menu-part .menu .in-menu img {
+    margin: 0;
+  }
 }
 .container-bg .menu-part .menu .in-menu div {
   width: 100%;
@@ -246,6 +315,11 @@ header .header-content p {
   font-size: 1.1rem;
   text-align: end;
 }
+@media screen and (max-width: 400px) {
+  .container-bg .menu-part .menu .in-menu .price {
+    text-align: center;
+  }
+}
 
 .booking {
   display: grid;
@@ -253,6 +327,12 @@ header .header-content p {
   width: 80%;
   margin: 80px auto;
   background: rgb(4, 4, 4);
+}
+@media screen and (max-width: 1030px) {
+  .booking {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .booking .left-part {
   display: flex;
@@ -263,6 +343,11 @@ header .header-content p {
   background: rgb(4, 4, 4);
   border: 1px rgb(201, 201, 201) dashed;
   margin: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .booking .left-part {
+    text-align: center;
+  }
 }
 .booking .left-part h4 {
   font-family: "allura", sans-serif;
@@ -304,11 +389,21 @@ header .header-content p {
   justify-content: center;
   line-height: 25px;
 }
+@media screen and (max-width: 590px) {
+  .booking .right-part {
+    text-align: center;
+  }
+}
 .booking .right-part h4 {
   color: rgb(161, 125, 77);
   font-family: "allura", sans-serif;
   font-size: 2.4rem;
   font-weight: 100;
+}
+@media screen and (max-width: 1030px) {
+  .booking .right-part h4 {
+    padding-top: 20px;
+  }
 }
 .booking .right-part p {
   font-family: "poppins", serif;
@@ -324,6 +419,14 @@ header .header-content p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40px 40px;
   gap: 15px;
+}
+@media screen and (max-width: 590px) {
+  .booking .right-part .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 25px;
+  }
 }
 .booking .right-part .form select,
 .booking .right-part .form input {
@@ -361,6 +464,11 @@ header .header-content p {
   align-items: center;
   line-height: 38px;
   margin-bottom: 150px;
+}
+@media screen and (max-width: 1007px) {
+  .events {
+    display: none;
+  }
 }
 .events h4 {
   font-family: "allura", sans-serif;
@@ -588,6 +696,12 @@ header .header-content p {
   width: 940px;
   height: 300px;
 }
+@media screen and (max-width: 1000px) {
+  .after .ceo {
+    width: 90%;
+    height: auto;
+  }
+}
 .after .ceo img {
   position: absolute;
   top: 0;
@@ -633,9 +747,19 @@ footer {
   grid-template-columns: 50% 50%;
   height: 250px;
 }
+@media screen and (max-width: 850px) {
+  footer {
+    display: flex;
+  }
+}
 footer .bg {
   background: rgb(23, 23, 23);
   display: flex;
+}
+@media screen and (max-width: 850px) {
+  footer .bg {
+    display: none;
+  }
 }
 footer .bg .left-part {
   display: flex;
@@ -662,6 +786,19 @@ footer .right-part {
   flex-direction: column;
   justify-content: center;
   margin-left: 40px;
+}
+@media screen and (max-width: 850px) {
+  footer .right-part {
+    width: 100%;
+    align-items: center;
+    margin: 40px;
+  }
+}
+@media screen and (max-width: 380px) {
+  footer .right-part {
+    align-items: start;
+    margin: 0 20px;
+  }
 }
 footer .right-part .newsletter {
   line-height: 30px;

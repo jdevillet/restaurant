@@ -5,6 +5,10 @@
   grid-template-columns: 50% 50%;
   min-height: 400px;
   background: rgb(245, 245, 245);
+  @media screen and (max-width: 570px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .left-part {
     display: flex;
@@ -73,7 +77,9 @@
     align-items: center;
     margin: 0 auto;
     padding: 45px 0 0 0;
-
+    @media screen and (max-width: 570px) {
+      width: 90%;
+    }
     h4 {
       font-family: $font1;
       color: $color1;
@@ -110,6 +116,10 @@
       grid-template-columns: 50% 50%;
       border-top: 4px solid $color1;
       margin-bottom: 100px;
+      @media screen and (max-width: 570px) {
+        display: flex;
+        flex-direction: column;
+      }
 
       .in-menu {
         display: flex;
@@ -118,9 +128,17 @@
         margin: 0 20px 10px;
         border-bottom: 1px dashed rgb(182, 182, 182);
         gap: 10px;
+        @media screen and (max-width: 400px) {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+        }
         img {
           border-radius: 999px;
           height: 80px;
+          @media screen and (max-width: 400px) {
+            margin: 0;
+          }
         }
         div {
           width: 100%;
@@ -147,6 +165,9 @@
           font-family: $font3;
           font-size: 1.1rem;
           text-align: end;
+          @media screen and (max-width: 400px) {
+            text-align: center;
+          }
         }
       }
     }
@@ -160,6 +181,10 @@
   width: 80%;
   margin: 80px auto;
   background: rgb(4, 4, 4);
+  @media screen and (max-width: 1030px) {
+    display: flex;
+    flex-direction: column;
+  }
 
   .left-part {
     display: flex;
@@ -170,6 +195,10 @@
     background: rgb(4, 4, 4);
     border: 1px rgb(201, 201, 201) dashed;
     margin: 20px;
+
+    @media screen and (max-width: 1200px) {
+      text-align: center;
+    }
 
     h4 {
       font-family: $font1;
@@ -212,13 +241,18 @@
     flex-direction: column;
     background: $white1;
     justify-content: center;
-
     line-height: 25px;
+    @media screen and (max-width: 590px){
+      text-align: center;
+    }
     h4 {
       color: $color1;
       font-family: $font1;
       font-size: 2.4rem;
       font-weight: 100;
+      @media screen and (max-width: 1030px) {
+        padding-top: 20px;
+      }
     }
     p {
       font-family: $font2;
@@ -235,6 +269,12 @@
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 40px 40px;
       gap: 15px;
+      @media screen and (max-width: 590px) {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 25px;
+      }
       select,
       input {
         font-family: $font3;
@@ -275,6 +315,10 @@
   align-items: center;
   line-height: 38px;
   margin-bottom: 150px;
+
+  @media screen and (max-width: 1007px){
+    display: none;
+  }
 
   h4 {
     font-family: $font1;
@@ -494,10 +538,10 @@
     }
   }
 }
-.after{
-position: relative;
-width: 100%;
-padding-bottom: 200px;
+.after {
+  position: relative;
+  width: 100%;
+  padding-bottom: 200px;
   .ceo {
     text-align: center;
     justify-content: center;
@@ -507,7 +551,11 @@ padding-bottom: 200px;
     margin: 0 auto;
     width: 940px;
     height: 300px;
-    
+    @media screen and (max-width: 1000px){
+      width: 90%;
+      height: auto;
+    }
+
     img {
       position: absolute;
       top: 0;
@@ -538,7 +586,7 @@ padding-bottom: 200px;
   }
   &:after {
     content: "";
-    background: url(/assets/img/gmap.jpg)center/cover;
+    background: url(/assets/img/gmap.jpg) center/cover;
     position: absolute;
     height: 300px;
     width: 100%;
@@ -549,4 +597,3 @@ padding-bottom: 200px;
     z-index: -1;
   }
 }
-  
