@@ -39,7 +39,7 @@ header h4 {
   font-size: 2.1rem;
   color: rgb(0, 0, 0);
   color: rgb(251, 251, 251);
-  padding: 0 30px 0 0;
+  padding: 0 80px 0 0;
 }
 @media screen and (max-width: 640px) {
   header h4 {
@@ -53,8 +53,8 @@ header ul {
   font-size: 0.8rem;
 }
 header .mid-part {
-  justify-content: space-between;
-  width: 60%;
+  justify-content: space-around;
+  width: 50%;
   font-family: "roboto", serif;
 }
 @media screen and (max-width: 640px) {
@@ -243,14 +243,19 @@ header .right-part li:hover {
   justify-content: space-around;
 }
 .container-bg .menu-part nav .choices li {
+  cursor: pointer;
   font-family: "roboto", serif;
   font-size: 0.9rem;
   padding: 0 0 5px 0;
   color: rgb(251, 251, 251);
   border-bottom: 1px solid rgb(251, 251, 251);
+  transition: 0.3s;
 }
 .container-bg .menu-part nav .choices li:first-letter {
   text-transform: uppercase;
+}
+.container-bg .menu-part nav .choices li:hover {
+  border: 1px solid rgb(251, 251, 251);
 }
 .container-bg .menu-part .menu {
   width: 100%;

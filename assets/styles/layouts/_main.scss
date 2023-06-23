@@ -96,14 +96,20 @@
         display: flex;
         justify-content: space-around;
         li {
+          cursor: pointer;
           font-family: $font3;
           font-size: 0.9rem;
           padding: 0 0 5px 0;
           color: $white1;
           border-bottom: 1px solid $white1;
+          transition: 0.3s;
 
           &:first-letter {
             text-transform: uppercase;
+          }
+
+          &:hover{
+            border: 1px solid $white1;
           }
         }
       }
